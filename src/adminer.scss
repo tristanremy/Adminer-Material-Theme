@@ -13,7 +13,7 @@ $inactive-color-light: lighten($inactive-color, 20%);
 $checkbox-link: 'check.svg';
 $radio-link: 'radio.svg';
 
-$font-link: 'https://fonts.googleapis.com/css?family=Roboto:400,700';
+$font-link: 'https://fonts.googleapis.com/css?family=Roboto:100,300,400,500,700';
 $font: "Roboto", sans-serif;
 
 @mixin hover-links {
@@ -24,6 +24,7 @@ $font: "Roboto", sans-serif;
 }
 
 @import url(#{$font-link});
+
 
 body {
   display       : flex;
@@ -36,6 +37,8 @@ body {
 
 * {
   outline-color: $primary-color;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
 }
 
 ::selection {
@@ -136,7 +139,7 @@ body {
       transition     : all .2s;
       border-radius  : 2px;
       text-align     : center;
-      font-weight    : bold;
+      font-weight    : 500;
       font-size      : 13px;
       line-height    : 30px;
     }
@@ -163,7 +166,7 @@ body {
       color         : $primary-color;
       text-align    : center;
       text-transform: uppercase;
-      font-weight   : bold;
+      font-weight   : 500;
       font-size     : 13px;
       line-height   : 24px;
       transition    : all .2s;
@@ -221,7 +224,7 @@ a {
       color         : $primary-color;
       text-align    : center;
       text-transform: uppercase;
-      font-weight   : bold;
+      font-weight   : 500;
       font-size     : 13px;
       line-height   : 18px;
     }
@@ -291,7 +294,7 @@ a {
   color         : #fff;
   text-align    : center;
   text-transform: uppercase;
-  font-weight   : bold;
+  font-weight   : 500;
   font-size     : 13px;
   line-height   : 24px;
   transition    : all .2s;
@@ -537,7 +540,7 @@ td a:visited,
 th a,
 th a:visited {
   color      : $primary-color;
-  font-weight: 700;
+  font-weight: 500;
 }
 
 .js .checkable .checked td,
@@ -637,7 +640,7 @@ sup {
       color         : $primary-color;
       text-align    : center;
       text-transform: uppercase;
-      font-weight   : bold;
+      font-weight   : 500;
       font-size     : 13px;
       line-height   : 24px;
       transition    : all .2s;
@@ -713,7 +716,7 @@ sup {
   legend a {
     padding    : 5px;
     color      : $primary-color;
-    font-weight: bold;
+    font-weight: 500;
     font-size  : 13px;
     line-height: 18px;
     transition : all .2s;
